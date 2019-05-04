@@ -1,0 +1,43 @@
+# Site settings
+title: X-burger
+description: 'Minimal-Jekyll-Notes'
+url: 'https://www.sieburger.com/'
+baseurl: '/jekyll-uno'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Marcio Siebrger'
+  email: sieb@gmx.us
+  twitter_username: sieburgerr
+  facebook_username: marcio.sieburger
+  github_username:  x-burger
+  linkedin_username:  marcio-sieburger
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
