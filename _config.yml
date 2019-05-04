@@ -1,8 +1,8 @@
 # Site settings
 title: X-burger
 description: 'Minimal-Jekyll-Notes'
-url: 'https://www.sieburger.com/'
-baseurl: '/jekyll-uno'
+url: ''
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
