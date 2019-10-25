@@ -20,6 +20,6 @@ gpg --list-secret-keys --keyid-format LONG
 
   * Note: Some GPG installations on Linux may require you to use gpg2 --list-keys --keyid-format LONG to view a list of your existing keys instead. In this case you will also need to configure Git to use gpg2 by running git config --global gpg.program gpg2.
 
-3- Check a saída do comando para ver se você tem alguma chave GPG.
+3- Check a saída do comando para ver se você tem alguma chave GPG
 
 ***
