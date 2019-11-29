@@ -1,15 +1,16 @@
 ---
-title: "Uso básico"
-date:   2019-02-11 23:43:00 -0200
-categories: [jekyll]
+title: Uso básico do Jekyll
+layout: post
 tags: [jekyll]
 ---
 
-[Basic Usage](https://jekyllrb.com/docs/usage/)
-
 A gem Jekyll disponibiliza um executável `jekyll` para você na janela do Terminal. Você pode usar este comando de várias maneiras:
 
-```sh
+<p align="left">
+  <img width="90" height="55" src="/images/logo-2x.png">
+</p>
+
+```bash
 jekyll build
 # => The current folder will be generated into ./_site
 
@@ -31,20 +32,17 @@ O URL padrão é definido como `http://localhost:4000` no ambiente de desenvolvi
 Se você deseja criar para o seu ambiente de produção:
 
 Defina seu URL de produção em `_config.yml`, por exemplo `URL: https://example.com`.
-Executar `JEKYLL_ENV = bundle exec jekyll build`.
 
-  * Alterações no `_config.yml` não são incluídas durante a regeneração automática.
+  > __Alterações no `_config.yml` não são incluídas durante a regeneração automática.
     O arquivo de configuração principal `_config.yml` contém configurações globais e definições de variáveis que são lidas uma vez no tempo de execução. As alterações feitas no `_config.yml` durante a regeneração automática não são carregadas até a próxima execução.
-    Note que [Data Files](https://jekyllrb.com/docs/datafiles) são incluídos e recarregados durante a regeneração automática.
+    Note que os [Data Files](https://jekyllrb.com/docs/datafiles) são incluídos e recarregados durante a regeneração automática.__
 
-        * Pastas de destino são limpas nas compilações do site
-    O conteúdo de <destination> é automaticamente limpo, por padrão, quando o site é criado. Arquivos ou pastas que não são criados pelo seu site serão removidos. Os arquivos e pastas que você deseja reter em <destination> podem ser especificados na diretiva de configuração <keep_files>.
-    Não use um local importante para <destination>; em vez disso, use-o como uma área de teste e copie os arquivos desse local para o servidor da web.
+  > __Pastas de destino são limpas nas compilações do site.__ __O conteúdo de `<destination>` é automaticamente limpo, por padrão, quando o site é criado. Arquivos ou pastas que não são criados pelo seu site serão removidos. Os arquivos e pastas que você deseja reter em `<destination>` podem ser especificados na diretiva de configuração `<keep_files>`. Não use um local importante para `<destination>`; em vez disso, use-o como uma área de teste e copie os arquivos desse local para o servidor da web.__
 
 
 O Jekyll também vem com um servidor de desenvolvimento embutido que permitirá que você visualize como o site gerado ficará no seu navegador localmente.
 
-```sh
+```bash
 jekyll serve
 # => Um servidor de desenvolvimento será executado em http: // localhost: 4000 /
 # Auto-regeneração: ativada. Use `--no-watch` para desativar.
@@ -61,21 +59,21 @@ jekyll serve --detach
 # Se você não consegue encontrar o PID, então, `ps aux | grep jekyll` e mata a instância.
 ```
 
-```sh
+```bash
 jekyll serve --no-watch
 # => O mesmo que "jekyll serve", mas não assistirá a alterações.
 ```
 
 Estas são apenas algumas das [opções de configuração](https://jekyllrb.com/docs/configuration/) disponíveis. Muitas opções de configuração podem ser especificadas como sinalizadores (flags) na linha de comando ou, como alternativa (e mais comum), podem ser especificadas em um arquivo `_config.yml` na raiz do diretório de origem. O Jekyll usará automaticamente as opções deste arquivo quando for executado. Por exemplo, se você colocar as seguintes linhas no arquivo `_config.yml`:
 
-```sh
+```bash
 source:      _source
 destination: _deploy
 ```
 
 Então os dois comandos seguintes serão equivalentes:
 
-```sh
+```bash
 jekyll build
 jekyll build --source _source --destination _deploy
 ```
@@ -87,4 +85,8 @@ O comando de `help` está sempre aqui para lembrá-lo de todas as opções dispo
 
 Se você estiver interessado em navegar por esses documentos on-the-go, instale o `jekyll-docs` gem e execute `jekyll docs` no seu terminal.
 
+[Fonte](https://jekyllrb.com/docs/usage/)
+
 ***
+
+mail me: marcio at sieburger dot link

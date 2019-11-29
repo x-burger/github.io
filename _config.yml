@@ -1,6 +1,6 @@
 # Site settings
 title: X-burger
-description: 'Minimal-Jekyll-Notes'
+description: 'X-Burger são minhas anotações das coisa que venho aprendendo ao longo desses anos com o github e faço questão de compartilhar. </br> Aqui você vai descobrir muitas coisas interessantes nesse universo da tecnologia da informação. </br> Fique a vontade para pesquisar nosso blog que esta em desenvolvimento contínuou. </br> </br> Se quiser nos pagar um café fique a vontade, BTC: 37PBho29TdvZMkUsAkrPgCwdofPKAAGDCG '
 url: ''
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
@@ -8,7 +8,7 @@ baseurl: ''
 
 author:
   name: 'Marcio Sieburger'
-  email: sieb@gmx.us
+  email: marcio@sieburger.link
   twitter_username: sieburgerr
   facebook_username: marcio.sieburger
   github_username:  x-burger
@@ -21,10 +21,16 @@ defaults:
       type: 'posts'
     values:
         layout: 'post'
+#  -
+#    scope:
+#      path: ''
+#      type: 'pages'
+#    values:
+#      layout: 'page'
 
 # Build settings
 destination: _site
-paginate: 10
+paginate: 20
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge

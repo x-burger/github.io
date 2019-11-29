@@ -1,15 +1,12 @@
 ---
-title: "Front Matter"
-date:   2019-02-11 23:42:00 -0200
-categories: [jekyll]
+title: Front Matter jekyll
+layout: post
 tags: [jekyll]
 ---
 
-[Front Matter](https://jekyllrb.com/docs/frontmatter/)
-
 O assunto principal é onde o Jekyll começa a ficar bem legal. Qualquer arquivo que contenha um bloco de assuntos frontais do [YAML](http://yaml.org/) será processado pelo Jekyll como um arquivo especial. O assunto da frente deve ser a primeira coisa no arquivo e deve assumir a forma de YAML válido definido entre linhas tracejadas triplas. Aqui está um exemplo básico:
 
-```sh
+```bash
 ---
 layout: post
 title: Blogging Like a Hacker
@@ -18,7 +15,7 @@ title: Blogging Like a Hacker
 
 Entre essas linhas tracejadas triplas, você pode definir variáveis predefinidas (veja abaixo uma referência) ou até mesmo criar as suas próprias. Essas variáveis estarão disponíveis para você acessar usando tags Liquid mais abaixo no arquivo e também em qualquer layouts ou includes que a página ou postagem em questão depender.
 
-    * Se você usar a codificação UTF-8, certifique-se de que não existam caracteres de cabeçalho `BOM` da lista de materiais em seus arquivos ou coisas muito ruins acontecerão com o Jekyll. Isso é especialmente relevante se você estiver executando o Jekyll no Windows.
+  * Se você usar a codificação UTF-8, certifique-se de que não existam caracteres de cabeçalho `BOM` da lista de materiais em seus arquivos ou coisas muito ruins acontecerão com o Jekyll. Isso é especialmente relevante se você estiver executando o Jekyll no Windows.
 
 *ProTip ™: Variáveis de Matéria da Frente São Opcionais*
 *Se você quiser usar tags e variáveis liquid, mas não precisa de nada em seu assunto, apenas deixe em branco! O conjunto de linhas tracejadas triplo com nada entre elas fará com que Jekyll processe seu arquivo. (Isso é útil para coisas como CSS e feeds RSS!)*
@@ -32,9 +29,9 @@ Variável: `layout`
 
 Descrição: Se definido, isso especifica o arquivo de layout a ser usado. Use o nome do arquivo de layout sem a extensão do arquivo. Arquivos de layout devem ser colocados na pasta `_layouts`.
 
-    * Usando `null` produzirá um arquivo sem usar um arquivo de layout. No entanto, isso é substituído se o arquivo for um post/document e tiver um layout definido nos [padrões de frontmatter](https://jekyllrb.com/docs/configuration/#front-matter-defaults).
+  * Usando `null` produzirá um arquivo sem usar um arquivo de layout. No entanto, isso é substituído se o arquivo for um post/document e tiver um layout definido nos [padrões de frontmatter](https://jekyllrb.com/docs/configuration/#front-matter-defaults).
     
-    * A partir da versão 3.5.0, usar `none` em um post/document produzirá um arquivo sem usar um arquivo de layout, independentemente dos padrões de frontmatter. Usar `none` em uma página, no entanto, fará com que o Jekyll tente usar um layout chamado "none".
+  * A partir da versão 3.5.0, usar `none` em um post/document produzirá um arquivo sem usar um arquivo de layout, independentemente dos padrões de frontmatter. Usar `none` em uma página, no entanto, fará com que o Jekyll tente usar um layout chamado "none".
 
 
 Variável: `permalink`
@@ -53,15 +50,17 @@ Descrição: Defina como `false` se você não quiser que uma postagem específi
 
 Quaisquer variáveis no front matter que não são predefinidas são misturadas nos dados que são enviados para o Liquid template durante a conversão. Por exemplo, se você definir um título, poderá usá-lo no layout para definir o título da página:
 
-```html
+```liquid {% raw %}
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <title> {{ page.title }} </title>
   </head>
   <body>
-    …
+      …
+{% endraw %}
 ```
+
 
 ### [Variáveis Predefinidas para Postagens](https://jekyllrb.com/docs/frontmatter/#predefined-variables-for-posts)
 
@@ -86,4 +85,8 @@ Descrição: Semelhante a categorias, uma ou várias tags podem ser adicionadas 
   * ProTip ™: não se repita
     Se você não quiser repetir as variáveis frequentemente usadas no assunto, basta definir [defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults) para elas e substituí-las apenas quando necessário (ou não). Isso funciona tanto para variáveis predefinidas quanto personalizadas.
 
+[Fonte](https://jekyllrb.com/docs/frontmatter/)
+
 ***
+
+mail me: marcio at sieburger dot link

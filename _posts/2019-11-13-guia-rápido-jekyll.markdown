@@ -1,27 +1,31 @@
 ---
-title: "Quick-Start Guide"
-date:   2019-02-11 23:44:00 -0200
-categories: [jekyll]
+title: Guia rápido Jekyll
+layout: post
 tags: [jekyll]
 ---
 
-[Quick-start guide](https://jekyllrb.com/docs/quickstart/)
-
 Se você já tem um ambiente de desenvolvimento [Ruby](https://www.ruby-lang.org/en/downloads/) completo com todos os cabeçalhos e [RubyGems](https://rubygems.org/pages/download) instalados (veja os [requisitos](https://jekyllrb.com/docs/installation/#requirements) do Jekyll), você pode criar um novo site Jekyll fazendo o seguinte:
 
-Instale Jekyll e Bundler gems através do RubyGems
-`gem install jekyll bundler`
 
-Criando um novo Jekyll site em ./myblog
-`jekyll new myblog`
+<p align="right">
+  <img width="60" height="35" src="/images/logo-2x.png">
+</p>
 
-Mude para o seu novo diretório
-`cd myblog`
+```shell
+# Instale Jekyll e Bundler gems através do RubyGems
+gem install jekyll bundler
 
-Construa o site no servidor de visualização
-`bundle exec jekyll serve`
+# Criando um novo Jekyll site em ./myblog
+jekyll new myblog
 
-#### Agora navegue para http://localhost:4000
+# Mude para o seu novo diretório
+cd myblog
+
+# Construa o site no servidor de visualização
+bundle exec jekyll serve
+
+# Agora navegue para http://localhost:4000
+```
 
 Se você encontrar algum erro inesperado durante o procedimento acima, consulte a página de [solução de problemas](https://jekyllrb.com/docs/troubleshooting/#configuration-problems) ou a página de requisitos já mencionada, pois pode estar faltando cabeçalhos de desenvolvimento ou outros pré-requisitos.
 
@@ -57,4 +61,7 @@ Para obter mais informações sobre como usar o Bundler em seu projeto Jekyll, e
 
 _Construir um site Jekyll com o tema padrão é apenas o primeiro passo. A mágica real acontece quando você começa a criar postagens de blog, usando o assunto principal para controlar modelos e layouts, e aproveitando todas as opções impressionantes de configuração que o Jekyll disponibiliza._
 
+[Fonte](https://jekyllrb.com/docs/quickstart/)
+
 ***
+mail me: marcio at sieburger dot link

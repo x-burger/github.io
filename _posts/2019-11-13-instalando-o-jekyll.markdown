@@ -1,13 +1,13 @@
 ---
-title: "Instalação"
-date:   2019-02-11 23:45:00 -0200
-categories: [jekyll]
+title: Instalando o Jekyll
+layout: post
 tags: [jekyll]
 ---
-
-[Installation](https://jekyllrb.com/docs/installation/)
-
 Jekyll é um [Ruby Gem](http://guides.rubygems.org/rubygems-basics/), e pode ser instalado na maioria dos sistemas.
+
+<p align="right">
+  <img width="115" height="75" src="/images/logo-2x.png">
+</p>
 
 ### Requisitos
 
@@ -72,14 +72,15 @@ Isso vai instalar o ultimo pré-release. Se quiser um em particular, use `-v` in
 
 Se você deseja instalar uma versão de desenvolvimento do Jekyll, o processo é um pouco mais complicado. Isso lhe dá a vantagem de ter o mais recente e melhor, mas pode ser instável.
 
-```sh
-git clone git://github.com/jekyll/jekyll.git
+`git clone git://github.com/jekyll/jekyll.git
 cd jekyll
 script/bootstrap
 bundle exec rake build
-ls pkg/*.gem | head -n 1 | xargs gem install -l
-```
+ls pkg/*.gem | head -n 1 | xargs gem install -l`
 
 Agora com tudo atualizado e instalado, mãos à obra!
 
+[Fonte](https://jekyllrb.com/docs/installation/)
+
 ***
+mail me: marcio at sieburger dot link

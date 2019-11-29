@@ -1,15 +1,16 @@
 ---
-title: "Assets"
-date:   2019-02-11 23:41:00 -0200
-categories: [jekyll]
+title: Assets
+layout: post
 tags: [jekyll]
 ---
 
-[Assets](https://jekyllrb.com/docs/assets/)
-
 O Jekyll fornece suporte integrado para o Sass e pode trabalhar com o CoffeeScript por meio de gem. Ruby. Para usá-los, você deve primeiro criar um arquivo com o nome de extensão adequado (algo como, `.sass`, `.scss` ou `.coffee`) e __iniciar o arquivo com duas linhas de traços triplos__, como este:
 
-```ruby
+<p align="right">
+  <img width="60" height="35" src="/images/logo-2x.png">
+</p>
+
+```yaml
 ---
 ---
 
@@ -31,7 +32,7 @@ Coloque todos seus partials em seu diretório `sass_dir`, que por padrão é `<s
 
 Se você está usando um `@import` Sass, precisa garantir que seu `sass_dir` está definido para o diretório base que contém seus arquivos Sass. Você pode fazer isso assim:
 
-```ruby
+```yaml
 sass:
     sass_dir: _sass
 ```
@@ -43,7 +44,7 @@ O Sass converte  por padrão as opções em `sass_dir` para `_sass`.
 
 Você tamm pode especificar o estilo de  saída com a opção `style` no seu arquivo `_config.yml`:
 
-```ruby
+```yaml
 sass:
     style: compressed
 ```
@@ -59,9 +60,11 @@ Para ativar o Coffeescript no Jekyll 3.0 ou acima você deve:
 
 * Certifique-se de que seu `_config.yml` esteja atualizado e inclua o seguinte:
 
-```ruby
+```yaml
 pluguins:
  - jekyll-coffeescript
 ```
+[Fonte](https://jekyllrb.com/docs/assets/)
 
 ***
+mail me: marcio at sieburger dot link

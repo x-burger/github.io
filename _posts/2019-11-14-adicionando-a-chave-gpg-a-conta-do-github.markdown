@@ -1,13 +1,13 @@
 ---
-title: "Adicionando a chave GPG a conta do Github"
-date:   2019-02-11 12:42:00 -0200
-categories: [gpg_github]
-tags: [gpg_github]
+title: Adicionando a chave GPG a conta do Github
+layout: post
+tags: [GPG, github]
 ---
-
-[Telling git about your gpg key](https://help.github.com/articles/telling-git-about-your-gpg-key/)
-
 Depois de configurar sua chave GPG e adicioná-la à sua conta do GitHub, você precisa informar ao Git que há uma chave GPG que você gostaria de usar.
+
+<p align="center">
+  <img width="57" height="37" src="/images/GitHub-Mark-64px.png">
+</p>
 
 Se você estiver usando uma chave GPG que corresponda à sua identidade de committer e ao seu endereço de e-mail confirmado associado à sua conta do GitHub, você poderá começar a assinar commits e assinar tags.
 
@@ -19,7 +19,7 @@ Se você tem várias chaves GPG, você precisa dizer ao Git qual delas usar.
 
 2 - Use o comando `gpg --list-secret-keys --keyid-format LONG` para listar as chaves GPG para as quais você tem uma chave pública e privada. Uma chave privada é necessária para assinar commits ou tags.
 
-```sh
+```bash
 gpg --list-secret-keys --keyid-format LONG
 
 ```
@@ -28,7 +28,7 @@ gpg --list-secret-keys --keyid-format LONG
 
 3 -Na lista de chaves GPG, copie o ID da chave GPG que você gostaria de usar. Neste exemplo, o ID da chave GPG é `3AA5C34371567BD2`:
 
-```sh
+```bash
 gpg --list-secret-keys --keyid-format LONG
 /Users/hubot/.gnupg/secring.gpg
 ------------------------------------
@@ -43,7 +43,7 @@ ssb   4096R/42B317FD4BA89E7A 2016-03-10
 
 5 - Para adicionar sua chave GPG no seu bash profile, cole o texto abaixo:
 
-```sh
+```bash
 test -r ~/.bash_profile && echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile
 echo 'export GPG_TTY=$(tty)' >> ~/.profile
 ```
@@ -51,3 +51,4 @@ echo 'export GPG_TTY=$(tty)' >> ~/.profile
   * Note: Se não tem o `.bash_profile`, esse comando adiciona a chave GPG ao `.profile`.
 
 ***
+mail me: marcio at sieburger dot link
